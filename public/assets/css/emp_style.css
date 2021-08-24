@@ -1,0 +1,83 @@
+/* Sidebar */
+#sidebar-wrapper {
+	z-index: 1;
+	position: fixed; /* top left corner */
+	width: 0;
+	min-height: 100%;
+	overflow-y: hidden;
+	background: #2C3E50;
+	transition: all 0.3s;
+	/*border: 2px solid red;
+	opacity: 0.9; /* make it see through */
+}
+
+/* Page Content */
+#page-content-wrapper {
+	width: 100%;
+	position: absolute;
+	padding: 15px;
+	transition: all 0.3s;
+	/*border: 2px solid green;*/
+}
+
+/* Change the width of sidebar to display it and add padding to page-content-wrapper */
+#wrapper.displayMenu #sidebar-wrapper {
+	width: 250px;
+}
+
+#wrapper.displayMenu #page-content-wrapper {
+	padding-left: 250px;
+}
+
+/* Sidebar Styling */
+#sidebar-nav {
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar-nav li {
+	text-indent: 3px;
+	line-height: 25px;
+}
+
+.submenu {	
+    margin-left: 25px !important;	
+    background: #448396;	
+}
+
+#sidebar-nav li a {
+	display: block; /* stacked on each other */
+	text-decoration: none;
+	color: #ddd;
+}
+
+#sidebar-nav li a:hover {
+	background: #83b9d4;	
+    color: #000;
+}
+
+/* Toggle Button -> making it sticky at top */
+div.sticked {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+
+/* Sidebar profile picture*/
+div #emp_img {
+    width: 50%;
+    border-radius: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity ease-in-out 0.5s;
+    opacity: 0;
+    /*visibility: hidden;*/
+}
+
+div [for="hide_pic"] {
+    color: rgb(184, 161, 161);
+}
+

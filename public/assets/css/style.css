@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    overflow-y: auto;
+}
+
+.martop100 {
+	margin-top: 100px;
+}
+
+.sidebar {
+	padding-top: 20px;
+	padding-left: 25px;
+	background-color: black;
+    /*margin-bottom: -5000px;
+	padding-bottom: 5000px;*/
+    min-height:630px;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 1070px) {
+    .sidebar {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
+
+.sidebar h3 {
+	color: white;
+}
+
+.sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar ul li {
+	margin: 0;
+	padding: 10px 10px;
+	color:white;
+}
+
+.sidebar ul li div {
+	background-color: maroon;
+}
+
+.sidebar ul li div a:hover {
+	color: black;
+    font-weight: bold;
+}
+
+.sidebar ul li:hover, .sidebar ul li a:hover  {
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: white;
+}
+
+.sidebar ul li ul {
+	display: none;
+}
+
+.sidebar ul li:hover > ul {
+	display: block;
+}
+
+.sidebar ul li ul li a {
+	text-decoration: none !important;
+	color: white;
+	padding-right: 10px;
+}
+
+.sidebar ul li ul li a:hover {
+	text-decoration: underline;
+}
+
+.header {
+	background-color: maroon;
+	padding: 5px 15px;
+	color: white;
+}
+
+.topbar a {
+	text-decoration: none;
+	color: white;
+	padding-right: 15px;
+}
+
+.topbar a:hover {
+	text-decoration: underline;
+}
+
+.content {
+	background-color: white;
+	padding-top: 19px;
+}
+
+/*#mytab1 {
+    table-layout:fixed;
+    word-wrap: break-word;
+}*/
+
